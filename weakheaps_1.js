@@ -1,4 +1,3 @@
-//let array = [8, 7, 4, 5, 2, 6, 9, 3, 11, 1]        
 let array = [8, 10, 27, 12, 47, 49, 53, 46, 75, 80, 26]         
 let arrayCopy = [...array]
 let r = [];
@@ -31,6 +30,8 @@ for(let i = 0; i < array.length; i ++) {
 for(let i = 1; array.length - i > 0; i++) {
   Merge(Gparent(array.length - i), array.length - i)
 }  
-//end main
+//Display program info
+console.log('Original array ', array)
+console.log('New array weak heap')
 console.table(arrayCopy)
-console.log(r)
+console.log('Reversve bit array ', r)
